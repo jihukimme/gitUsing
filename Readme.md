@@ -3,7 +3,7 @@
 
 1. 터미널에 'get init'을 먼저 해준다.  => 맨처음에 프로젝트를 올릴 때
 
-2. 'git add .' => 파일 전부 다 올리기 위해
+2. 'git add .' => 파일 전부 다 올릴 때 사용
 
    'git status' => 상태를 알려주는
 
@@ -15,6 +15,6 @@
    'git remote remove origin' => 기존 레포지토리의 remote를 삭제하고자 할 때
 
 
-5. 'git push origin master'를 통해서 push
+5. 'git push origin master'를 통해서 origin master에 push
 
 끝.
