@@ -319,11 +319,14 @@ __double underscores__
 ![Alt text](/path/to/img.jpg)
 ![Alt text](/path/to/img.jpg "Optional title")
 ```
+![GitTestImage](Git_Test_Image.jpg "Test Image")
 
 ```
 <img src="/path/to/img.jpg" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="RubberDuck"></img><br/>
 <img src="/path/to/img.jpg" width="40%" height="30%" title="px(픽셀) 크기 설정" alt="RubberDuck"></img>
 ```
+
+<img src="Git_Test_Image.jpg" width="40%" height="30%" title="px(픽셀) 크기 설정" alt="Cat"></img>
 
 
 
