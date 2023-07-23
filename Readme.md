@@ -95,11 +95,255 @@ How to using git
 >    base를 업로드할 곳으로 설정 후 Creat pull request하기  
 
 
-    
+
+* * *
+
+
+# 3. How to use Markdown
+Markdown: 텍스트 기반의 마크업언어로 2004년 존그루버에 의해 만들어졌으며 쉽게 쓰고 읽을 수 있으며 HTML로 변환이 가능하다. 특수기호와 문자를 이용한 매우 간단한 구조의 문법을 사용하여 웹에서도 보다 빠르게 컨텐츠를 작성하고 보다 직관적으로 인식할 수 있다.  
+
+> 1. 간결하다.
+> 2. 별도의 도구없이 작성가능하다.
+> 3. 다양한 형태로 변환이 가능하다.
+> 4. 텍스트(Text)로 저장되기 때문에 용량이 적어 보관이 용이하다.
+> 5. 텍스트파일이기 때문에 버전관리시스템을 이용하여 변경이력을 관리할 수 있다.
+> 6. 지원하는 프로그램과 플랫폼이 다양하다.  
+
+## 3.1. Markdown 문법  
+
+### 3.1.1. Header
+- 6가지의 Header지원
+
+```
+# //This is a H1
+## //This is a H2
+### //This is a H3
+#### //This is a H4
+##### //This is a H5
+###### //This is a H6
+```
+# This is a H1
+## This is a H2
+### This is a H3
+#### This is a H4
+##### This is a H5
+###### This is a H6  
 
 
 
 
+### 3.1.2. BlockQuote  
+
+```
+> This is a first blockqute.
+>	> This is a second blockqute.
+>	>	> This is a third blockqute.
+```
+> This is a first blockqute.
+>	> This is a second blockqute.
+>	>	> This is a third blockqute.
 
 
-    
+
+### 3.1.3. 목록
+
+- 순서있는 목록(번호)
+
+  순서있는 목록은 숫자와 점을 사용한다.  
+```
+1. 첫번째
+2. 두번째
+3. 세번째
+```
+1. 첫번째
+2. 두번째
+3. 세번째
+
+- 순서없는 목록(글머리 기호: *, +, -)
+```
+* 글머리1.1
+  * 글머리1.2
+    * 글머리1.3
+
++ 글머리2.1
+  + 글머리2.2
+    + 글머리2.3
+
+- 글머리3.1
+  - 글머리3.2
+    - 글머리3.3
+```
+* 글머리1.1
+  * 글머리1.2
+    * 글머리1.3
+
++ 글머리2.1
+  + 글머리2.2
+    + 글머리2.3
+
+- 글머리3.1
+  - 글머리3.2
+    - 글머리3.3
+
+
+  혼합사용 가능
+```
+* 글머리1
+  - 글머리2
+    + 글머리3
+      + 글머리3.1
+```
+* 글머리1
+  - 글머리2
+    + 글머리3
+      + 글머리3.1
+
+
+### 3.1.4. Code Block
+
+- 방법1  
+<pre>
+<code>
+```
+Code Block
+```
+</code>
+</pre>
+
+  
+```
+Code Block
+```
+
+<pre>
+<code>
+```java
+public class Hello {
+  public static void main(String[] args) {
+    System.out.println("Hello, Jihu");
+  }
+}
+```
+</code>
+</pre>
+
+```java
+public class Hello {
+  public static void main(String[] args) {
+    System.out.println("Hello, Jihu");
+  }
+}
+```
+
+
+- 방법2
+```
+<pre>
+<code>
+Code Block
+</code>
+</pre>
+```
+
+<pre>
+<code>
+Code Block
+</code>
+</pre>
+
+
+### 3.1.5. 수평선
+
+```
+* * *
+
+***
+
+*****
+
+- - -
+
+---------------------------------------
+```  
+
+* * *
+
+***
+
+*****
+
+- - -
+
+---------------------------------------
+
+
+
+### 3.1.6 링크  
+
+
+[지후의 깃허브](https://github.com/jihukimme)
+```
+사용문법: [Title](link)
+적용예: [지후의 깃허브](https://github.com/jihukimme)
+```
+
+
+지후의 깃 링크: <https://github.com/jihukimme>  
+지후의 이메일링크: <jihu0210@naver.com>  
+```
+지후의 깃 링크: <https://github.com/jihukimme>
+지후의 이메일링크: <jihu0210@naver.com>
+```
+
+
+### 3.1.7 강조
+
+*single asterisks*  
+_single underscores_  
+**double asterisks**  
+__double underscores__  
+~~cancelline~~  
+
+```
+*single asterisks*
+_single underscores_
+**double asterisks**
+__double underscores__
+~~cancelline~~
+```
+
+
+
+### 3.1.8 이미지 
+```
+![Alt text](/path/to/img.jpg)
+![Alt text](/path/to/img.jpg "Optional title")
+```
+
+```
+<img src="/path/to/img.jpg" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="RubberDuck"></img><br/>
+<img src="/path/to/img.jpg" width="40%" height="30%" title="px(픽셀) 크기 설정" alt="RubberDuck"></img>
+```
+
+
+
+### 3.1.9 줄바꿈
+3칸 이상 띄어쓰기( )를 하면 줄이 바뀐다.
+
+```
+* 줄 바꿈을 하기 위해서는 문장 마지막에서 3칸이상을 띄어쓰기해야 한다. 
+이렇게
+
+* 줄 바꿈을 하기 위해서는 문장 마지막에서 3칸이상을 띄어쓰기해야 한다.___\\ 띄어쓰기
+이렇게
+```
+
+* 줄 바꿈을 하기 위해서는 문장 마지막에서 3칸이상을 띄어쓰기해야 한다. 
+이렇게
+
+* 줄 바꿈을 하기 위해서는 문장 마지막에서 3칸이상을 띄어쓰기해야 한다.   
+이렇게
+
+
+
+* * *
