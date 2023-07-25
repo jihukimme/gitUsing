@@ -9,19 +9,40 @@ How to using git
 
 # 1. Basic Git using
 
-> 1. 터미널에 ```get init``` 을 먼저 해준다.  => 맨처음에 프로젝트를 올릴 때  
-> 
-> 1. ```git add .``` => 파일 전부 다 올릴 때 사용  
->    ```git status``` => 상태를 알려주는  
-> 
-> 1. ```git commit -m 'history' ``` => 커밋에 대한 history  
-> 
+## 1.1 새 repository를 생성했을 때, 맨처음 git에 올릴 때
+> 1. 터미널에 ```get init``` 을 먼저 해준다.  => 맨처음에 프로젝트를 올릴 때      
+>   
+>     
+> 1. ```git add .``` => 파일 전부 다 올릴 때 사용
+>    ```git add README.md``` => MarkDown파일 생성할 때 사용  
+>    ```git status``` => 상태를 알려주는    
+>    
+>    
+> 1. ```git commit -m 'history' ``` => 커밋에 대한 history
+>     - ex:) git commit -m "first commit"    
+>     
+>     
+> 1. ```git branch -M master``` => 기본 branch를 main으로 변경하기
+>     - ex:) git branch -M main    
+>    
+>     
 > 1. ```git remote add origin https://github.com/계정/리포지토리``` => 연결고리 만들기  
 >    ```git remote -v``` => 연결한 주소 확인  
->    ```git remote remove origin``` => 기존 레포지토리의 remote를 삭제하고자 할 때  
-> 
-> 
-> 1. ```git push origin master```를 통해서 origin master에 push  
+>    ```git remote remove origin``` => 기존 레포지토리의 remote를 삭제하고자 할 때     
+>    
+>    
+> 1. ```git push origin master```를 통해서 origin master에 push
+
+
+## 1.2 이미 존재하는 repository에 올릴 때
+> 1. ```git remote add origin https://github.com/계정/리포지토리```  
+> 2. git branch -M main  
+> 3. git push -u origin main  
+
+
+
+
+
 
   
 
