@@ -10,7 +10,7 @@ How to using git
 # 1. Basic Git using
 
 ## 1.1 새 repository를 생성했을 때, 맨처음 git에 올릴 때
-> 1. 터미널에 ```get init``` 을 먼저 해준다.  => 맨처음에 프로젝트를 올릴 때      
+> 1. 터미널에 ```git init``` 을 먼저 해준다.  => 맨처음에 프로젝트를 올릴 때      
 >   
 >     
 > 1. ```git add .``` => 파일 전부 다 올릴 때 사용
